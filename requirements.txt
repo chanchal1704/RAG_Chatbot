@@ -1,6 +1,9 @@
-import langchain 
-from langchain.llms import OpenAI
-from langchain.chains.question_answering import load_qa_chain
+langchain 
+langchain-google-genai 
+langchain_community 
+pypdf 
 chromadb 
-pdfplumber 
+sentence-transformers
+google-generativeai 
+pdfplumber
 streamlit
