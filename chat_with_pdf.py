@@ -17,20 +17,6 @@ This notebook will guide you through implementing the backend components of a RA
 First, let's install the necessary libraries.
 """
 
-# Install required packages
-langchain 
-langchain-google-genai 
-langchain_community 
-pypdf 
-chromadb 
-sentence-transformers -q
-google-generativeai 
-pdfplumber -q
-
-"""Next, let's import all required libraries:"""
-
-streamlit
-
 import os
 import pdfplumber
 import google.generativeai as genai
@@ -42,8 +28,9 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.chains import ConversationalRetrievalChain
 from langchain.memory import ConversationBufferMemory
 
-from google.colab import userdata
-os.environ["GOOGLE_API_KEY"] = userdata.get("GEMINI_API_KEY")
+import os
+import streamlit as st
+os.environ["GOOGLE_API_KEY"] = st.secrets["GOOGLE_API_KEY"]
 
 import streamlit as st
 import os
