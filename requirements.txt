@@ -1,6 +1,4 @@
 langchain 
-langchain-google-genai 
-langchain_community
 chromadb 
 pdfplumber 
 streamlit
